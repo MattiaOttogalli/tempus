@@ -61,11 +61,13 @@
             position: relative;
         }
 
-        #map-image {
-            /* Queste righe eliminano le barre nere */
+       #map-image {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Riempie lo spazio ritagliando l'eccesso */
+            object-fit: cover; 
+            /* Sposta l'immagine a sinistra. 
+               0% = attaccata a sinistra, 50% = centro, 100% = attaccata a destra */
+            object-position: 15% center; 
             display: block;
         }
 
@@ -174,3 +176,4 @@
 
 </body>
 </html>
+
